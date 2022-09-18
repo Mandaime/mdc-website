@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "tailwindcss/dist/base.css";
+import "./styles/globalStyles.css";
+import React from "react";
+import { css } from "styled-components/macro"; //eslint-disable-line
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AgencyLandingPage from "./pages/AgencyLandingPage";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <AgencyLandingPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
-export default App;
+// export default EventLandingPage;
+// export default HotelTravelLandingPage;
+// export default AgencyLandingPage;
+// export default SaaSProductLandingPage;
+// export default RestaurantLandingPage;
+// export default ServiceLandingPage;
+// export default HostingCloudLandingPage;
+
+// export default LoginPage;
+// export default SignupPage;
+// export default PricingPage;
+// export default AboutUsPage;
+// export default ContactUsPage;
+// export default BlogIndexPage;
+// export default TermsOfServicePage;
+// export default PrivacyPolicyPage;
+
+// export default MainLandingPage;
