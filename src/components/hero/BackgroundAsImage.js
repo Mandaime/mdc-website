@@ -85,9 +85,9 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
+            <Notification>Nouvelle vision du Nord.</Notification>
             <Heading>
-              <span>Hire the best</span>
+              <span>Engagez les meilleurs</span>
               <br />
               <SlantedBackground>Marketing Team.</SlantedBackground>
             </Heading>
